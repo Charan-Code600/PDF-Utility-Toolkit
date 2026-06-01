@@ -1,4 +1,7 @@
-# PDF Utility Toolkit 📄
+
+
+
+# 📄 PDF Utility Toolkit
 
 A simple and powerful PDF tool built with Python.
 
@@ -9,16 +12,22 @@ A simple and powerful PDF tool built with Python.
 - 🔐 Password Protect a PDF
 
 ## Requirements
-Install required libraries:
+```bash
 pip install pypdf pymupdf
+```
 
 ## How to Use
 1. Place your PDF files in the same folder as the program
 2. Run the program:
-   python pdf_toolkit.py
+```bash
+python pdf_toolkit.py
+```
 3. Choose an option from the menu
 
 ## Technologies Used
 - Python
 - pypdf
 - pymupdf (fitz)
+
+## Author
+Charan | Python Developer
