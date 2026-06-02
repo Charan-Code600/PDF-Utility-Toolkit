@@ -1,4 +1,6 @@
 
+
+
 import os
 import fitz
 from pypdf import PdfWriter, PdfReader
@@ -43,14 +45,16 @@ while True:
     elif option == "2":
         try:
             file = input("PDF name : ")
-            page = int(input("Which page to split? : "))
+            start = int(input("From page? : "))
+            end = int(input("To page? : "))
             output = input("Save as : ")
             reader = PdfReader(file)
-            if page < 1 or page > len(reader.pages):
-                print("❌ Invalid page number!")
+            if start < 1 or end > len(reader.pages) or start > end:
+                print("❌ Invalid page range!")
                 continue
             writer = PdfWriter()
-            writer.add_page(reader.pages[page - 1])
+            for i in range(start - 1, end):
+                writer.add_page(reader.pages[i])
             with open(output, "wb") as f:
                 writer.write(f)
             print("✅ PDF Split!")
