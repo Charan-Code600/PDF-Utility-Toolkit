@@ -30,4 +30,4 @@ python pdf_toolkit.py
 - pymupdf (fitz)
 
 ## Author
-Charan | Python Developer
+Charan Aade | Python Developer
