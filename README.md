@@ -56,7 +56,7 @@ python pdf_toolkit.py
 
 ## Author
 
-Charan Aade | Python Developer
+**Charan Aade | Python Developer**
 
 
 
